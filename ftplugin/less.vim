@@ -22,4 +22,4 @@ setlocal commentstring=//\ %s
 setlocal omnifunc=csscomplete#CompleteCSS
 setlocal suffixesadd=.less,.css
 
-let &l:include = '^\s*@import\s\+\%(url(\)\=["'']\='
+" let &l:include = '^\s*@import\s\+\%(url(\)\=["'']\='
