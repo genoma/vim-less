@@ -1,7 +1,9 @@
+" Originally was
 " Vim indent file
 " Language:	SCSS
 " Maintainer:	Tim Pope <vimNOSPAM@tpope.org>
 " Last Change:	2010 Jul 26
+"=============================================
 
 if exists("b:did_indent")
   finish

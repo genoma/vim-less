@@ -11,7 +11,6 @@
 " Language:	less
 " Maintainer:	Alessandro Vioni <jenoma@gmail.com>
 " Filenames:	*.less
-" Last Change:	2014 March 13
 
 if exists("b:current_syntax")
   finish
