@@ -16,7 +16,7 @@ let b:undo_ftplugin = "setl cms< def< inc< inex< ofu< sua<"
 
 setlocal formatoptions-=t formatoptions+=croql
 
-setlocal commentstring=//\ %s
+setlocal comments=:// commentstring=//\ %s
 " setlocal define=^\\s*\\%(@mixin\\\|=\\)
 " setlocal includeexpr=substitute(v:fname,'\\%(.*/\\\|^\\)\\zs','_','')
 setlocal omnifunc=csscomplete#CompleteCSS
