@@ -23,7 +23,8 @@ syn case ignore
 syn cluster lessCssProperties contains=cssFontProp,cssFontDescriptorProp,cssColorProp,cssTextProp,cssBoxProp,cssGeneratedContentProp,cssPagingProp,cssUIProp,cssRenderProp,cssAuralProp,cssTableProp
 syn cluster lessCssAttributes contains=css.*Attr,lessEndOfLineComment,scssComment,cssValue.*,cssColor,cssURL,lessDefault,cssImportant,cssError,cssStringQ,cssStringQQ,cssFunction,cssUnicodeEscape,cssRenderProp
 
-syn region lessDefinition matchgroup=cssBraces start="{" end="}" contains=TOP
+" syn region lessDefinition matchgroup=cssBraces start="{" end="}" contains=TOP
+syn region lessDefinition matchgroup=cssBraces start="{" end="}"
 
 syn match lessProperty "\%([{};]\s*\|^\)\@<=\%([[:alnum:]-]\|#{[^{}]*}\)\+\s*:" contains=css.*Prop skipwhite nextgroup=lessCssAttribute contained containedin=lessDefinition
 syn match lessProperty "^\s*\zs\s\%(\%([[:alnum:]-]\|#{[^{}]*}\)\+\s*:\|:[[:alnum:]-]\+\)"hs=s+1 contains=css.*Prop skipwhite nextgroup=lessCssAttribute
