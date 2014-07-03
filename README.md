@@ -7,4 +7,10 @@ Tim Pope [vim-haml](http://www.vim.org/scripts/script.php?script_id=1433) fork t
 
 This is a very rough modification of Tim syntax files to highlight Less syntax, and despite my lack of knowledge in Vim scripting, it works quite well.
 
+# Installing
+
+Using [Vundle](https://github.com/gmarik/vundle), add this to your `.vimrc` file:
+
+`Bundle 'genoma/vim-less'`
+
 ###### Of course improvements and bug fixes are always welcome!
