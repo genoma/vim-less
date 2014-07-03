@@ -113,7 +113,6 @@ hi def link lessId                      Identifier
 hi def link lessClass                   Type
 hi def link lessDefinition              Type
 hi def link lessCssAttribute            PreProc
-hi def link lessProperty                Type
 
 let b:current_syntax = "less"
 
