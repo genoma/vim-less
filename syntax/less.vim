@@ -71,8 +71,14 @@ syn keyword lessFunction multiply screen overlay softlight hardlight difference 
 syn match lessEscape     "^\s*\zs\\"
 syn match lessIdChar     "#[[:alnum:]_-]\@=" nextgroup=lessId
 syn match lessId         "[[:alnum:]_-]\+" contained
-syn match lessClassChar  "\.[[:alnum:]_-]\@=" nextgroup=lessClass
+syn match lessClassChar  "\.[[:alnum:]_-]\@=" nextgroup=lessClass,lessClassCall
 syn match lessClass      "[[:alnum:]_-]\+" contained
+syn match lessClassCall  "[[:alnum:]_-]\+()" contained
+
+syn match lessCallIdChar   "#[[:alnum:]_-]\@=" nextgroup=lessCallId,lessClassIdCall
+syn match lessClassId      "[[:alnum:]_-]\+()" contained
+syn match lessClassIdCall  "[[:alnum:]_-]\+()" contained
+
 syn match lessAmpersand  "&"
 
 syn region lessInclude start="@import" end=";\|$" contains=lessComment,cssURL,cssUnicodeEscape,cssMediaType,cssStringQ,cssStringQQ
@@ -112,6 +118,9 @@ hi def link lessClassChar               Special
 hi def link lessId                      Identifier
 hi def link lessClass                   Type
 hi def link lessCssAttribute            PreProc
+
+hi def link lessClassCall               Type
+hi def link lessClassIdCall             type
 
 let b:current_syntax = "less"
 
