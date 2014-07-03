@@ -13,4 +13,6 @@ Using [Vundle](https://github.com/gmarik/vundle), add this to your `.vimrc` file
 
 `Bundle 'genoma/vim-less'`
 
-###### Of course improvements and bug fixes are always welcome!
+# Contributing
+
+###### Of course pull requests are always welcome!
