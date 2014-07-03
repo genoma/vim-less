@@ -111,7 +111,6 @@ hi def link lessClassChar               Special
 " hi def link lessAmpersand               Character
 hi def link lessId                      Identifier
 hi def link lessClass                   Type
-hi def link lessDefinition              Type
 hi def link lessCssAttribute            PreProc
 
 let b:current_syntax = "less"
