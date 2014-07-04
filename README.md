@@ -26,7 +26,7 @@ There are a bunch of issues right now that need attention:
 - [ ] `div { font-size: 20px; }` written on one line, is identified as `cssDeprecated`
 - [ ] The code is in need of some cleaning
 
-If you find yourself having some free time on your hands and want to contribute, i strongly advise you to do so.
+If you find yourself having some free time on your hands and want to contribute, i strongly encurage you to do so.
 
 # License
 
