@@ -34,6 +34,7 @@ syn match lessDefault "!default\>" contained
 " syn match lessVariable "!\%(important\>\|default\>\)\@![[:alnum:]_-]\+"
 
 syn match lessVariable "@[[:alnum:]_-]\+" nextgroup=lessCssAttribute skipwhite
+syn match lessMedia "@media" nextgroup=lessCssAttribute skipwhite
 
 " syn match lessVariableAssignment ":" nextgroup=lessCssAttribute skipwhite
 " syn match lessVariableAssignment "\%([!$][[:alnum:]_-]\+\s*\)\@<=:" nextgroup=lessCssAttribute skipwhite
@@ -153,6 +154,8 @@ hi def link lessClassIdCall             type
 
 hi def link lessTagName                 cssTagName
 hi def link lessDeprecated              cssDeprecated
+
+hi def link lessMedia                   cssMedia
 
 let b:current_syntax = "less"
 
