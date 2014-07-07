@@ -69,17 +69,16 @@ syn keyword lessFunction multiply screen overlay softlight hardlight difference 
 " syn match lessReturn "\%([{};]\s*\|^\s*\)\@<=@return"
 
 syn match lessEscape     "^\s*\zs\\"
-syn match lessIdChar     "#[[:alnum:]_-]\@=" nextgroup=lessId
+syn match lessIdChar     "#[[:alnum:]_-]\@=" nextgroup=lessId,lessClassIdCall
 syn match lessId         "[[:alnum:]_-]\+" contained
+syn match lessClassIdCall  "[[:alnum:]_-]\+()" contained
+
 syn match lessClassChar  "\.[[:alnum:]_-]\@=" nextgroup=lessClass,lessClassCall
 syn match lessClass      "[[:alnum:]_-]\+" contained
 syn match lessClassCall  "[[:alnum:]_-]\+()" contained
 
-syn match lessCallIdChar   "#[[:alnum:]_-]\@=" nextgroup=lessCallId,lessClassIdCall
-syn match lessClassId      "[[:alnum:]_-]\+()" contained
-syn match lessClassIdCall  "[[:alnum:]_-]\+()" contained
 
-syn match lessAmpersand  "&" contains=lessCssAttribute
+syn match lessAmpersand  "&" contains=lessIdChar,lessClassChar
 
 syn region lessInclude start="@import" end=";\|$" contains=lessComment,cssURL,cssUnicodeEscape,cssMediaType,cssStringQ,cssStringQQ
 " syn region lessDebugLine end=";\|$" matchgroup=lessDebug start="@debug\>" contains=@lessCssAttributes,lessVariable,lessFunction
