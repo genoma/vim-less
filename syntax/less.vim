@@ -45,6 +45,35 @@ syn match lessVariable "@[[:alnum:]_-]\+" nextgroup=lessCssAttribute skipwhite
 " syn match lessFunction "\<\%(percentage\|round\|ceil\|floor\|abs\)\>(\@=" contained
 " syn match lessFunction "\<\%(type-of\|unit\|unitless\|comparable\)\>(\@=" contained
 
+" TODO: FIX behavior with cssTagName and cssDeprecated:
+" div { font-size: 10px; } on one line is identified as
+" a cssDeprecated element. There i removed font as a deprecated
+" element and as a tag name
+
+"Override lessTagNames
+" All HTML4 tags
+syn keyword lessTagName abbr acronym address applet area a b base
+syn keyword lessTagName basefont bdo big blockquote body br button
+syn keyword lessTagName caption center cite code col colgroup dd del
+syn keyword lessTagName dfn dir div dl dt em fieldset form frame
+syn keyword lessTagName frameset h1 h2 h3 h4 h5 h6 head hr html img i
+syn keyword lessTagName iframe img input ins isindex kbd label legend li
+syn keyword lessTagName link map menu meta noframes noscript ol optgroup
+syn keyword lessTagName option p param pre q s samp script select small
+syn keyword lessTagName span strike strong style sub sup table tbody td
+syn keyword lessTagName textarea tfoot th thead title tr tt ul u var
+syn keyword lessTagName object svg
+
+" 34 HTML5 tags
+syn keyword lessTagName article aside audio bdi canvas command data
+syn keyword lessTagName datalist details dialog embed figcaption figure footer
+syn keyword lessTagName header hgroup keygen main mark menuitem meter nav
+syn keyword lessTagName output progress rt rp ruby section
+syn keyword lessTagName source summary time track video wbr
+
+" Tags not supported in HTML5
+syn keyword lessDeprecated acronym applet basefont big center dir
+syn keyword lessDeprecated frame frameset noframes strike tt
 
 syn keyword lessFunction escape e % containedin=lessDefinition contained
 syn keyword lessFunction unit containedin=lessDefinition contained
@@ -81,6 +110,7 @@ syn match lessClassCall  "[[:alnum:]_-]\+()" contained
 syn match lessAmpersand  "&" contains=lessIdChar,lessClassChar
 
 syn region lessInclude start="@import" end=";\|$" contains=lessComment,cssURL,cssUnicodeEscape,cssMediaType,cssStringQ,cssStringQQ
+
 " syn region lessDebugLine end=";\|$" matchgroup=lessDebug start="@debug\>" contains=@lessCssAttributes,lessVariable,lessFunction
 " syn region lessWarnLine end=";\|$" matchgroup=lessWarn start="@warn\>" contains=@lessCssAttributes,lessVariable,lessFunction
 " syn region lessControlLine matchgroup=lessControl start="@\%(if\|else\%(\s\+if\)\=\|while\|for\|each\)\>" end="[{};]\@=\|$" contains=lessFor,@lessCssAttributes,lessVariable,lessFunction
@@ -120,6 +150,9 @@ hi def link lessCssAttribute            PreProc
 
 hi def link lessClassCall               Type
 hi def link lessClassIdCall             type
+
+hi def link lessTagName                 cssTagName
+hi def link lessDeprecated              cssDeprecated
 
 let b:current_syntax = "less"
 
