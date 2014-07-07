@@ -33,6 +33,7 @@ syn match lessDefault "!default\>" contained
 
 " syn match lessVariable "!\%(important\>\|default\>\)\@![[:alnum:]_-]\+"
 
+" less variables and media queries
 syn match lessVariable "@[[:alnum:]_-]\+" nextgroup=lessCssAttribute skipwhite
 syn match lessMedia "@media" nextgroup=lessCssAttribute skipwhite
 
@@ -76,6 +77,7 @@ syn keyword lessTagName source summary time track video wbr
 syn keyword lessDeprecated acronym applet basefont big center dir
 syn keyword lessDeprecated frame frameset noframes strike tt
 
+" Less functions
 syn keyword lessFunction escape e % containedin=lessDefinition contained
 syn keyword lessFunction unit containedin=lessDefinition contained
 syn keyword lessFunction ceil floor percentage round sqrt abs sin asin cos acos tan atan pi pow mod min max containedin=lessDefinition contained
@@ -106,7 +108,6 @@ syn match lessClassIdCall  "[[:alnum:]_-]\+()" contained
 syn match lessClassChar  "\.[[:alnum:]_-]\@=" nextgroup=lessClass,lessClassCall
 syn match lessClass      "[[:alnum:]_-]\+" contained
 syn match lessClassCall  "[[:alnum:]_-]\+()" contained
-
 
 syn match lessAmpersand  "&" contains=lessIdChar,lessClassChar
 
