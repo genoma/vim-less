@@ -1,13 +1,5 @@
-" Originally was
-" ==============
 " Vim syntax file
-" Language:	Sass
-" Maintainer:	Tim Pope <vimNOSPAM@tpope.org>
-" Filenames:	*.sass
-" Last Change:	2010 Aug 09
-"=============================================
-
-" Vim syntax file
+" Forked: Tim Pope Haml, Sass, SCSS https://github.com/tpope/vim-haml
 " Language:	less
 " Maintainer:	Alessandro Vioni <jenoma@gmail.com>
 " Filenames:	*.less
