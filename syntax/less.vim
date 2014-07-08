@@ -17,6 +17,7 @@ if exists("b:current_syntax")
 endif
 
 runtime! syntax/css.vim
+runtime! after/syntax/css.vim
 
 syn case ignore
 
