@@ -18,6 +18,10 @@ Using [Pathogen](https://github.com/tpope/vim-pathogen) clone this repository in
 `$ cd ~/.vim/bundle`
 `$ git clone https://github.com/genoma/vim-less.git`
 
+# Dependencies
+
+You can enable support to CSS3 improved syntax highlighting installing [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)
+
 # Contributing
 
 There are a bunch of issues right now that need attention:
