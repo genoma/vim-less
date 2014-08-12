@@ -68,6 +68,7 @@ syn match lessFunction "\<\%(hue\|saturation\|lightness\|red\|green\|blue\|alpha
 syn match lessFunction "\<\%(saturate\|desaturate\|lighten\|darken\|fadein\|fadeout\|fade\|spin\|mix\|greyscale\|contrast\)\>(\@=" contained
 syn match lessFunction "\<\%(multiply\|screen\|overlay\|softlight\|hardlight\|difference\|exclusion\|average\|negation\)\>(\@=" contained
 
+" Less id class visualization
 syn match lessIdChar     "#[[:alnum:]_-]\@=" nextgroup=lessId,lessClassIdCall
 syn match lessId         "[[:alnum:]_-]\+" contained
 syn match lessClassIdCall  "[[:alnum:]_-]\+()" contained
@@ -84,6 +85,9 @@ syn keyword lessTodo        FIXME NOTE TODO OPTIMIZE XXX contained
 syn region  lessComment     start="^\z(\s*\)//"  end="^\%(\z1 \)\@!" contains=lessTodo,@Spell
 syn region  lessCssComment  start="^\z(\s*\)/\*" end="^\%(\z1 \)\@!" contains=lessTodo,@Spell
 syn match   lessEndOfLineComment "//.*" contains=lessComment,lessTodo,@Spell
+
+
+
 
 hi def link lessEndOfLineComment        lessComment
 hi def link lessCssComment              lessComment
