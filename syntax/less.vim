@@ -61,13 +61,12 @@ syn keyword lessDeprecated acronym applet basefont big center dir
 syn keyword lessDeprecated frame frameset noframes strike tt
 
 " Less functions
-syn keyword lessFunction escape e % containedin=lessDefinition contained
-syn keyword lessFunction unit containedin=lessDefinition contained
-syn keyword lessFunction ceil floor percentage round sqrt abs sin asin cos acos tan atan pi pow mod min max containedin=lessDefinition contained
-syn keyword lessFunction rgb rgba argb hsl hsla hsv hsva containedin=lessDefinition contained
-syn keyword lessFunction hue saturation lightness red green blue alpha luma containedin=lessDefinition contained
-syn keyword lessFunction saturate desaturate lighten darken fadein fadeout fade spin mix greyscale contrast containedin=lessDefinition contained
-syn keyword lessFunction multiply screen overlay softlight hardlight difference exclusion average negation containedin=lessDefinition contained
+syn match lessFunction "\<\%(escape\|e\|unit\)\>(\@=" contained
+syn match lessFunction "\<\%(ceil\|floor\|percentage\|round\|sqrt\|abs\|sin\|asin\|cos\|acos\|tan\|atan\|pi\|pow\|min\|max\)\>(\@=" contained
+syn match lessFunction "\<\%(rgb\|rgba\|argb\|argb\|hsl\|hsla\|hsv\|hsva\)\>(\@=" contained
+syn match lessFunction "\<\%(hue\|saturation\|lightness\|red\|green\|blue\|alpha\|luma\)\>(\@=" contained
+syn match lessFunction "\<\%(saturate\|desaturate\|lighten\|darken\|fadein\|fadeout\|fade\|spin\|mix\|greyscale\|contrast\)\>(\@=" contained
+syn match lessFunction "\<\%(multiply\|screen\|overlay\|softlight\|hardlight\|difference\|exclusion\|average\|negation\)\>(\@=" contained
 
 syn match lessIdChar     "#[[:alnum:]_-]\@=" nextgroup=lessId,lessClassIdCall
 syn match lessId         "[[:alnum:]_-]\+" contained
