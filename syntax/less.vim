@@ -28,10 +28,7 @@ syn match lessDefault "!default\>" contained
 syn match lessVariable "@[[:alnum:]_-]\+" nextgroup=lessCssAttribute skipwhite
 syn match lessMedia "@media" nextgroup=lessCssAttribute skipwhite
 
-" TODO: FIX behavior with cssTagName and cssDeprecated:
-" div { font-size: 10px; } on one line is identified as
-" a cssDeprecated element. There i removed font as a deprecated
-" element and as a tag name.
+
 
 " OVERRIDING cssTagNames and cssDeprecated as a workaround,
 " those keywords are taken directly from css.vim syntax file
