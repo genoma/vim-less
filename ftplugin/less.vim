@@ -1,10 +1,8 @@
-" Originally was
-" ==============
 " Vim filetype plugin
-" Language:	Sass
-" Maintainer:	Tim Pope <vimNOSPAM@tpope.org>
-" Last Change:	2010 Jul 26
-"=============================================
+" Language:	less
+" Maintainer:	Alessandro Vioni <jenoma@gmail.com>
+" URL: https://github.com/genoma/vim-less
+" Last Change:	2014 October 23
 
 " Only do this when not done yet for this buffer
 if exists("b:did_ftplugin")

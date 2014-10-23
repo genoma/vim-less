@@ -1,8 +1,8 @@
 " Vim syntax file
-" Forked: Tim Pope Haml, Sass, SCSS https://github.com/tpope/vim-haml
 " Language:	less
 " Maintainer:	Alessandro Vioni <jenoma@gmail.com>
-" Filenames:	*.less
+" URL: https://github.com/genoma/vim-less
+" Last Change:	2014 October 23
 
 if exists("b:current_syntax")
   finish
