@@ -3,7 +3,7 @@ vim-less
 
 ![vim-less syntax highlighting](https://github.com/genoma/vim-less/raw/master/vim.png)
 
-Tim Pope [vim-haml](http://www.vim.org/scripts/script.php?script_id=1433) fork to highlight Less syntax correctly (mostly).
+Tim Pope [vim-haml](http://www.vim.org/scripts/script.php?script_id=1433) fork to highlight Less syntax correctly.
 
 This is a very rough modification of Tim syntax files to highlight Less syntax.
 
