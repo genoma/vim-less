@@ -5,8 +5,6 @@ vim-less
 
 Tim Pope [vim-haml](http://www.vim.org/scripts/script.php?script_id=1433) fork to highlight Less syntax correctly.
 
-This is a very rough modification of Tim syntax files to highlight Less syntax.
-
 # Installing
 
 Using [Vundle](https://github.com/gmarik/vundle), add this to your `.vimrc` file:
