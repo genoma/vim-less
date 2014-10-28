@@ -18,19 +18,13 @@ Using [Pathogen](https://github.com/tpope/vim-pathogen) clone this repository in
 `$ cd ~/.vim/bundle`
 `$ git clone https://github.com/genoma/vim-less.git`
 
-# Dependencies
+# Mandatory Dependencies
 
-You can enable support to CSS3 improved syntax highlighting installing [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)
+**For the syntax files to work correctly you need to install the latest CSS runtime files from [Jules Wang repository](https://github.com/JulesWang/css.vim)**
 
 # Contributing
 
-There are a bunch of issues right now that need attention:
-
-- [x] ~~`@media` queries are identified as less variables~~
-- [x] ~~`div { font-size: 20px; }` written on one line, is identified as `cssDeprecated`~~ (fixed with a temporary workaround)
-- [x] ~~The code is in need of some cleaning~~
-
-If you find yourself having some free time on your hands and want to contribute, i strongly encurage you to do so.
+If you find yourself having some free time on your hands and want to contribute, i strongly encourage you to do so.
 
 # License
 
