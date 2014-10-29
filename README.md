@@ -16,9 +16,9 @@ Using [Pathogen](https://github.com/tpope/vim-pathogen) clone this repository in
 `$ cd ~/.vim/bundle`
 `$ git clone https://github.com/genoma/vim-less.git`
 
-# Mandatory Dependencies
+# :warning: Mandatory Dependencies
 
-**For the syntax files to work correctly you need to install the latest CSS runtime files from [Jules Wang repository](https://github.com/JulesWang/css.vim)**
+#### For the syntax files to work correctly you need to install the latest CSS runtime files from [Jules Wang repository](https://github.com/JulesWang/css.vim) :heavy_exclamation_mark:
 
 # Contributing
 
