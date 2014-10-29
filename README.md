@@ -1,7 +1,7 @@
 vim-less
 ========
 
-![vim-less syntax highlighting](https://github.com/genoma/vim-less/raw/master/less.jpg)
+![vim-less syntax highlighting](https://raw.githubusercontent.com/genoma/vim-less/master/less.jpeg)
 
 Tim Pope [vim-haml](http://www.vim.org/scripts/script.php?script_id=1433) fork to highlight Less syntax correctly.
 
