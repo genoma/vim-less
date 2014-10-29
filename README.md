@@ -3,7 +3,9 @@ vim-less
 
 ![vim-less syntax highlighting](https://raw.githubusercontent.com/genoma/vim-less/master/less.jpeg)
 
-Tim Pope [vim-haml](http://www.vim.org/scripts/script.php?script_id=1433) fork to highlight Less syntax correctly.
+### Tim Pope [vim-haml](http://www.vim.org/scripts/script.php?script_id=1433) fork to highlight Less syntax correctly.
+
+<br><br>
 
 # Installing
 
@@ -16,13 +18,20 @@ Using [Pathogen](https://github.com/tpope/vim-pathogen) clone this repository in
 `$ cd ~/.vim/bundle`
 `$ git clone https://github.com/genoma/vim-less.git`
 
+
+<br>
+
 # :warning: Mandatory Dependencies
 
-#### For the syntax files to work correctly you need to install the latest CSS runtime files from [Jules Wang repository](https://github.com/JulesWang/css.vim) :heavy_exclamation_mark:
+### For the syntax files to work correctly you need to install the latest CSS runtime files from [Jules Wang repository](https://github.com/JulesWang/css.vim) :heavy_exclamation_mark:
+
+<br><br>
 
 # Contributing
 
 If you find yourself having some free time on your hands and want to contribute, i strongly encourage you to do so.
+
+<br>
 
 # License
 
