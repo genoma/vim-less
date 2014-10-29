@@ -21,9 +21,9 @@ Using [Pathogen](https://github.com/tpope/vim-pathogen) clone this repository in
 
 <br>
 
-# :warning: Mandatory Dependencies
+# :warning: Mandatory Dependencies :warning:
 
-### For the syntax files to work correctly you need to install the latest CSS runtime files from [Jules Wang repository](https://github.com/JulesWang/css.vim) :heavy_exclamation_mark:
+### For the syntax files to work correctly you need to install the latest CSS runtime files from [Jules Wang repository](https://github.com/JulesWang/css.vim)
 
 <br><br>
 
