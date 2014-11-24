@@ -2,7 +2,7 @@
 " Language:	less
 " Maintainer:	Alessandro Vioni <jenoma@gmail.com>
 " URL: https://github.com/genoma/vim-less
-" Last Change:	2014 October 23
+" Last Change:	2014 November 24
 
 " Only do this when not done yet for this buffer
 if exists("b:did_ftplugin")
