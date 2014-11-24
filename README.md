@@ -35,5 +35,5 @@ If you find yourself having some free time on your hands and want to contribute,
 
 # License
 
-This package is distribuited under the **Vim license**.
+This package is distributed under the **Vim license**.
 See `LICENSE` for more details.
