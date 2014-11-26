@@ -29,11 +29,11 @@ Using [Pathogen](https://github.com/tpope/vim-pathogen) clone this repository in
 
 # Contributing
 
-If you find yourself having some free time on your hands and want to contribute, i strongly encourage you to do so.
+If you find yourself having some free time on your hands and want to contribute, I strongly encourage you to do so.
 
 <br>
 
 # License
 
 This package is distributed under the **Vim license**.
-See `LICENSE` for more details.
+See `LICENSE.md` for more details.
