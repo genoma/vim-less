@@ -1,5 +1,6 @@
 vim-less
 ========
+###### *Now included in Vim 7.4.567 or later*
 
 ![vim-less syntax highlighting](https://raw.githubusercontent.com/genoma/vim-less/master/less.jpeg)
 
